@@ -14,7 +14,7 @@ using System.Collections.Generic;
 using MGS.IOUtility;
 using UnityEngine;
 
-namespace MGS.Streaming
+namespace MGS.StreamingReader
 {
     public sealed class PersistentReader
     {

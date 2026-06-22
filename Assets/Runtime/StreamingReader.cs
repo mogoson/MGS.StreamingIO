@@ -15,7 +15,7 @@ using System.Collections.Generic;
 using MGS.IOUtility;
 using UnityEngine;
 
-namespace MGS.Streaming
+namespace MGS.StreamingReader
 {
     public sealed class StreamingReader
     {
@@ -46,10 +46,10 @@ namespace MGS.Streaming
             return FileUtility.ReadAllBytes(filePath);
         }
 #endif
-        public static void ReadDataAsync(string fileName, Action<byte[], string, Exception> finished)
+        public static void ReadAsync(string fileName, Action<byte[], string, Exception> finished)
         {
             var filePath = GetFilePath(fileName);
-            WebUtility.GetWebDataAsync(filePath, finished);
+            WebUtility.RequestAsync(filePath, finished);
         }
     }
 }

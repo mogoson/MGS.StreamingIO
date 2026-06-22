@@ -14,7 +14,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace MGS.Streaming
+namespace MGS.StreamingReader
 {
     /// <summary>
     /// Avatar of MonoBehaviour for casual use.
@@ -29,7 +29,7 @@ namespace MGS.Streaming
             return avatar;
         }
 
-        public static void WaitForRoutine(IEnumerator routine)
+        public static void WaitRoutine(IEnumerator routine)
         {
             var avatar = CreateOne();
             avatar.StartCoroutine(Wait());
@@ -37,18 +37,6 @@ namespace MGS.Streaming
             {
                 yield return routine;
                 avatar.Dispose();
-            }
-        }
-
-        public static void WaitForSeconds(float seconds, Action finished)
-        {
-            var avatar = CreateOne();
-            avatar.StartCoroutine(Wait());
-            IEnumerator Wait()
-            {
-                yield return new WaitForSeconds(seconds);
-                avatar.Dispose();
-                finished?.Invoke();
             }
         }
 

@@ -14,16 +14,16 @@ using System;
 using System.Collections;
 using UnityEngine.Networking;
 
-namespace MGS.Streaming
+namespace MGS.StreamingReader
 {
     public sealed class WebUtility
     {
-        public static void GetWebDataAsync(string url, Action<byte[], string, Exception> finished)
+        public static void RequestAsync(string url, Action<byte[], string, Exception> finished)
         {
-            MonoAvatar.WaitForRoutine(GetWebData(url, finished));
+            MonoAvatar.WaitRoutine(RequestRoutine(url, finished));
         }
 
-        public static IEnumerator GetWebData(string url, Action<byte[], string, Exception> finished)
+        public static IEnumerator RequestRoutine(string url, Action<byte[], string, Exception> finished)
         {
             using var request = UnityWebRequest.Get(url);
             yield return request.SendWebRequest();

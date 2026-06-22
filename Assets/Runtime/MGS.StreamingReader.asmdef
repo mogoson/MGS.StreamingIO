@@ -1,6 +1,6 @@
 {
     "name": "MGS.StreamingReader",
-    "rootNamespace": "",
+    "rootNamespace": "MGS.StreamingReader",
     "references": [
         "MGS.IOUtility"
     ],
