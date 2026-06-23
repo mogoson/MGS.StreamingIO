@@ -28,22 +28,22 @@ namespace MGS.StreamingReader
         //Android: streamingAssetsPath in package, can not read by Local File System.
         //WebGL: streamingAssetsPath in server directory, can not read by Local File System.
 
-        public static string ReadAllText(string fileName)
+        public static string ReadAllText(string fileName, out Exception error)
         {
             var filePath = GetFilePath(fileName);
-            return FileUtility.ReadAllText(filePath);
+            return FileUtility.ReadAllText(filePath, out error);
         }
 
-        public static IEnumerable<string> ReadLines(string fileName)
+        public static IEnumerable<string> ReadLines(string fileName, out Exception error)
         {
             var filePath = GetFilePath(fileName);
-            return FileUtility.ReadLines(filePath);
+            return FileUtility.ReadLines(filePath, out error);
         }
 
-        public static byte[] ReadAllBytes(string fileName)
+        public static byte[] ReadAllBytes(string fileName, out Exception error)
         {
             var filePath = GetFilePath(fileName);
-            return FileUtility.ReadAllBytes(filePath);
+            return FileUtility.ReadAllBytes(filePath, out error);
         }
 #endif
         public static void ReadAsync(string fileName, Action<byte[], string, Exception> finished)

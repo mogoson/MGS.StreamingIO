@@ -18,10 +18,14 @@ namespace MGS.StreamingReader
 {
     /// <summary>
     /// Avatar of MonoBehaviour for casual use.
-    /// (Should hold the instance created by CreateOne method and dispose it if no longer needed.)
     /// </summary>
     public sealed class MonoAvatar : MonoBehaviour, IDisposable
     {
+        /// <summary>
+        /// Create one instance of MonoAvatar.
+        /// (Should hold the instance and dispose it if no longer needed.)
+        /// </summary>
+        /// <returns></returns>
         public static MonoAvatar CreateOne()
         {
             var avatar = new GameObject(nameof(MonoAvatar)).AddComponent<MonoAvatar>();
