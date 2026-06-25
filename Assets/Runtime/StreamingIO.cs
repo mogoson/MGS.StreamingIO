@@ -11,6 +11,7 @@
  *************************************************************************/
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using MGS.IOUtility;
 using UnityEngine;
@@ -50,6 +51,12 @@ namespace MGS.StreamingIO
         {
             var filePath = GetFilePath(fileName);
             WebUtility.RequestAsync(filePath, finished);
+        }
+
+        public static IEnumerator ReadRoutine(string fileName, Action<byte[], string, Exception> finished)
+        {
+            var filePath = GetFilePath(fileName);
+            return WebUtility.RequestRoutine(filePath, finished);
         }
     }
 }
