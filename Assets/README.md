@@ -1,14 +1,14 @@
 [TOC]
 
-# MGS.StreamingReader
+# MGS.StreamingIO
 
 ## Summary
 
-Reader for Unity StreamingAssets.
+IO for Unity Unity streaming assets.
 
 ## Ability
 
-- Provide reader to read asset in the StreamingAssets directory.
+- Provide IO utility to read and write asset with Unity streaming assets.
 
 ## Platform
 
@@ -23,9 +23,9 @@ Reader for Unity StreamingAssets.
 
   ```text
   https://github.com/mogoson/MGS.IOUtility.git?path=/Assets
-  https://github.com/mogoson/MGS.StreamingReader.git?path=/Assets
+  https://github.com/mogoson/MGS.StreamingIO.git?path=/Assets
   ```
 
 ---
 
-Copyright © 2025 Mogoson.	mogoson@outlook.com
+Copyright © 2026 Mogoson.	mogoson@outlook.com

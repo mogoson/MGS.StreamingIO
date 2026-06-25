@@ -1,7 +1,7 @@
 ﻿/*************************************************************************
  *  Copyright © 2025 Mogoson All rights reserved.
  *------------------------------------------------------------------------
- *  File         :  StreamingReader.cs
+ *  File         :  StreamingIO.cs
  *  Description  :  Default.
  *------------------------------------------------------------------------
  *  Author       :  Mogoson
@@ -15,9 +15,9 @@ using System.Collections.Generic;
 using MGS.IOUtility;
 using UnityEngine;
 
-namespace MGS.StreamingReader
+namespace MGS.StreamingO
 {
-    public sealed class StreamingReader
+    public sealed class StreamingIO
     {
         public static string GetFilePath(string fileName)
         {
