@@ -14,7 +14,7 @@ using System;
 using System.Collections;
 using UnityEngine.Networking;
 
-namespace MGS.StreamingO
+namespace MGS.StreamingIO
 {
     public sealed class WebUtility
     {

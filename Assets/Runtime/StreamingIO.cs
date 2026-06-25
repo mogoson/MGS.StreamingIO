@@ -15,7 +15,7 @@ using System.Collections.Generic;
 using MGS.IOUtility;
 using UnityEngine;
 
-namespace MGS.StreamingO
+namespace MGS.StreamingIO
 {
     public sealed class StreamingIO
     {

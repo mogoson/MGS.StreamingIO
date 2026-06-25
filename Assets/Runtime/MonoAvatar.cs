@@ -14,7 +14,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace MGS.StreamingO
+namespace MGS.StreamingIO
 {
     /// <summary>
     /// Avatar of MonoBehaviour for casual use.
