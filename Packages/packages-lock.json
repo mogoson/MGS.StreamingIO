@@ -14,6 +14,13 @@
       "dependencies": {},
       "hash": "89c959ee83148a54dd3eeb455bf1e44b9afa6519"
     },
+    "com.mgs.singleton": {
+      "version": "https://github.com/mogoson/MGS.Singleton.git?path=/Assets",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "ae5b588dbb1fb3d2201543730cc2df6567d63e0c"
+    },
     "com.unity.collab-proxy": {
       "version": "2.3.1",
       "depth": 0,

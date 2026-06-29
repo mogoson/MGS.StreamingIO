@@ -2,7 +2,8 @@
     "name": "MGS.StreamingIO",
     "rootNamespace": "MGS.StreamingIO",
     "references": [
-        "MGS.IOUtility"
+        "MGS.IOUtility",
+        "MGS.Singleton"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

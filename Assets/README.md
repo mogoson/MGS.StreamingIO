@@ -23,6 +23,7 @@ IO for Unity Unity streaming assets.
 
   ```text
   https://github.com/mogoson/MGS.IOUtility.git?path=/Assets
+  https://github.com/mogoson/MGS.Singleton.git?path=/Assets
   https://github.com/mogoson/MGS.StreamingIO.git?path=/Assets
   ```
 

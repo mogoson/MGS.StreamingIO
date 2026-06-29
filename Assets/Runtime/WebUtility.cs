@@ -12,6 +12,7 @@
 
 using System;
 using System.Collections;
+using MGS.Singleton;
 using UnityEngine.Networking;
 
 namespace MGS.StreamingIO
@@ -20,7 +21,7 @@ namespace MGS.StreamingIO
     {
         public static void RequestAsync(string url, Action<byte[], string, Exception> finished)
         {
-            MonoAvatar.WaitRoutine(RequestRoutine(url, finished));
+            MonoSingleton.Instance.StartCoroutine(RequestRoutine(url, finished));
         }
 
         public static IEnumerator RequestRoutine(string url, Action<byte[], string, Exception> finished)
